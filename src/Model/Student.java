@@ -12,12 +12,17 @@ public class Student extends User {
         this.name = name;
         this.grade = grade;
         this.year = year;
+    }
 
+    public Student(String name) {
+        this.name = name;
+        this.grade = 5.0f;
+        this.year = 1;
     }
 
     private Teacher teacher;
 
-
+    @Override
     public String getName() {
         return name;
     }

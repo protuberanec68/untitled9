@@ -1,12 +1,18 @@
 import Model.Student;
-import Service.StudentService;
-import Service.impls.StudentServiceImpl;
+import Model.Teacher;
+import Model.User;
+import Service.UserService;
+import Service.impls.UserServiceImpl;
+import View.StudentView;
+
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        StudentService studentService = new StudentServiceImpl();
-        studentService.add(new Student("Roman", 4.92f , 4));
+        StudentView view = new StudentView();
+        view.start();
     }
-
-
 }
