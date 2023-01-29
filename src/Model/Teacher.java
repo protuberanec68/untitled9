@@ -12,6 +12,7 @@ public class Teacher extends User {
         this.group = group;
     }
 
+    @Override
     public String getName() {
         return name;
     }

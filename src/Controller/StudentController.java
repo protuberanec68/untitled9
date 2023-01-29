@@ -1,13 +1,13 @@
 package Controller;
 
 import Model.Student;
-import Service.StudentService;
-import Service.impls.StudentServiceImpl;
+import Service.UserService;
+import Service.impls.UserServiceImpl;
 //Контроллер
 public class StudentController {
-    private StudentService studentService = new StudentServiceImpl();
+    private UserService userService = new UserServiceImpl();
     public void getStudentInfo(String name, float grade, int year){
-        studentService.add(new Student(name,grade,year));
+        userService.add(new Student(name,grade,year));
 
     }
 }
